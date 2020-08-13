@@ -14,6 +14,7 @@ class PlantTagsController < ApplicationController
     redirect_to garden_path(@plant.garden)
   end
 
+  # TO DEAL WITH THE ERROR MESSAGES WHEN SELECTING MULTIPLE OF THE SAME TAGS - CAN BE REFACTORED
   # def create
   #   @plant = Plant.find(params[:plant_id])
   #   @tags = Tag.where(id: params[:plant_tag][:tag])
